@@ -1,0 +1,675 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+  <head>
+    <meta name="author" content="Nitin Agarwal">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+
+    <style type="text/css">
+      /* Color scheme stolen from Sergey Karayev */
+      a {
+      color: #0070C0; /* #07889b; #1772d0;*/
+      text-decoration:none;
+      }
+      a:focus, a:hover {
+      color: #f09228;  /* #e37222; #f7b733;*/
+      text-decoration:none;
+      }
+      body,td,th,tr,p,a {
+      font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+      /*'Lato', Verdana, Helvetica, sans-serif;*/
+      font-size: 15px; /*13*/
+      }
+      strong {
+      font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+      /*'Lato', Verdana, Helvetica, sans-serif;*/
+      font-size: 15px; /*13*/
+      }
+      heading {
+      font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+      /*'Lato', Verdana, Helvetica, sans-serif;*/
+      font-size: 22px; /*24px*/
+      color: #C00000;  /*#e37222;*/ /*#fc4a1a;*/
+      }
+      heading2 {
+      font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+      /*'Lato', Verdana, Helvetica, sans-serif;*/
+      font-size: 18px; /*21px*/
+      }
+      papertitle {
+      font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+      /*'Lato', Verdana, Helvetica, sans-serif;*/
+      font-size: 15px; /*14*/
+      font-weight: 700;  /*600;*/
+      }
+      name {
+      font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+      /*'Lato', Verdana, Helvetica, sans-serif;*/
+      font-size: 42px; /*32px;*/
+      }
+      update{
+      /*color: #FF2474;*/
+      color: #C00000;
+      font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      /*'Lora', 'Garmound', Helvetica, sans-serif;*/
+      font-size: 14px;
+      font-weight: bold;
+      } 
+      projectdesc{
+      font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+      /*'Lato', Verdana, Helvetica, sans-serif;*/
+      font-size: 13px; /*13*/
+      }
+      li:not(:last-child) {
+          margin-bottom: 5px;
+      }
+      .one
+      {
+      width: 160px;
+      height: 160px;
+      position: relative;
+      }
+      .two
+      {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+      }
+      .fade {
+       transition: opacity .2s ease-in-out;
+       -moz-transition: opacity .2s ease-in-out;
+       -webkit-transition: opacity .2s ease-in-out;
+      }
+      span.highlight {
+          background-color: #ffffd0;
+      }
+      #customRef a:link{
+          color: #000000;
+          font-size: 21px;
+          text-decoration:none;
+      }
+      #customRef a:focus,
+      #customRef a:hover{
+          color: #f09228;
+          text-decoration:none;
+      }
+
+    </style>
+    <link rel="icon" type="image/png" href="./uci_logo.png">
+    <title>Nitin Agarwal</title>
+
+    <link href="./_files/css" rel="stylesheet" type="text/css">
+    
+    <style id="dark-reader-style" type="text/css">@media screen {
+
+      /* Text contrast */
+      html {
+        text-shadow: 0 0 0 !important;
+      }
+
+      /* Full screen */
+      *:-webkit-full-screen, *:-webkit-full-screen * {
+        -webkit-filter: none !important;
+      }
+
+      /* Page background */
+      html {
+        background: rgb(255,255,255) !important;
+      }
+
+      }
+    </style>
+
+    <script type="text/javascript">
+       function toggle_vis(id) {
+           var e = document.getElementById(id);
+           if (e.style.display == 'none')
+               e.style.display = 'inline';
+           else
+               e.style.display = 'none';
+       }
+    </script>
+  </head>
+
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+      <td>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody>
+        <tr>
+        <td width="67%" valign="middle">
+        <p align="center">
+        <name>Nitin Agarwal</name><br>
+        </p>
+
+        <p> I am a Research Scientist at <a href="https://www.csm.ai/">Common Sense Machines (CSM)</a>, where I work on 3D computer vision, computer graphics and machine learning. </p>
+
+        <p> I completed my PhD in Computer Science at <a href="http://www.cs.uci.edu/">UC Irvine</a> where I was advised by <a href="http://www.ics.uci.edu/~gopi/">Gopi Meenaskshisundaram</a> and closely collaborated with <a href="http://www0.cs.ucl.ac.uk/staff/n.mitra/">Niloy Mitra</a>. Prior to that, I recevied my Masters from <a href="https://bioe.uw.edu/">University of Washington</a> and Bachelors from <a href="http://www.bits-pilani.ac.in/pilani/ElectricalElectronicsInstrumentation/Home"target="new"> BITS Pilani.</a> 
+        </p>
+
+        <p align=center>
+          <a href="mailto:agarwaln@csm.ai"><img style="width: 25px" src="gmail.png"></a> &nbsp;  &nbsp;
+          <a href="./resume.pdf"> <img style="width: 25px" src="CV.png"></a> &nbsp;  &nbsp;
+          <a href="https://scholar.google.com/citations?user=qLzTf1kAAAAJ&hl=en"> <img style="width: 25px" src="scholar.jpg"></a> &nbsp;  &nbsp;
+          <a href="https://www.linkedin.com/in/nitin-agarwal-08029425"> <img style="width: 25px" src="linkedin.png"></a> &nbsp;  &nbsp;
+          <a href="https://github.com/nitinagarwal"> <img style="width: 25px" src="git.png">  </a> &nbsp;  &nbsp;
+          <a href="https://twitter.com/agarwaln9"> <img style="width: 25px" src="twitter.png">  </a>
+        </p>
+        </td>
+
+        <td width="33%">
+        <img height="220" width="180" src="./nitin.jpg">
+        <!-- <img height="330" width="330" src="./nitin_circle_image.jpg"> -->
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <!--NEWS -->
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+          <td>
+              <heading>News</heading>
+                  <p>
+                    <ul>
+                      <li> [November, 2020] - Joined <a href="https://www.csm.ai/">CSM</a> as a Research Scientist. </li>
+                      <li>[October, 2020] - Our paper on meshing the output points of a point network accepted to 3DV 2020. </li>
+                      <li>[August, 2020] - Our paper on style compatibility of 3D furnitures accepted to Pacific Graphics 2020. </li>
+                      <li>[March, 2020] - Gave a 3hr talk (slides available) on 3D Deep Learning @ UCI. </li>
+                      <li>[August, 2019] - I received the <a href ="https://bmvc2019.org/student-bursaries/"> travel award</a> to attend BMVC 2019.</li>
+                      <li>[July, 2019] - Our paper on Learning Embedding of 3D models with Quadric Loss accepted for <strong>Oral
+                              Presentation (acceptance rate - 4.6%)</strong> at BMVC 2019.</li>
+                      
+                      <li> <a href="javascript:toggle_vis('news')" style='font-size:13px'>show more</a> </li>
+
+                      <div id="news" style="display:none"> 
+                          <li>[April, 2018] - Our paper on Processing Mouse Brain Slices accepted to Journal of Neuroscience Methods. We have also released our code and data with the project. </li>
+                          <li>[January, 2018] - Our paper on Transcribing Tiny-Occuluded Labels is accepted to WACV 2018.</li>
+                          <li> [November, 2017] - I received the prestigious <a href="http://www.ics.uci.edu/community/scholarships/"> ICS Innovation Endowed Fellowship</a> for 2018. </li>
+
+                          <!-- <li>[August, 2017] - Our paper on Digitization of Pinned Insects accepted for <strong>Oral Presentation</strong> @ <a href="http://press3.mcs.anl.gov/bigdig/">eScience BigDig Workshop 2017.</a></li> -->
+                          <li>[May, 2017] I received  <a href="https://www.youtube.com/watch?v=ulQ54TzaENI">Best Demo Award (video) </a> @ UCI Computer Science Research Showcase 2017.</li>
+                          <li>[December, 2016] I received the prestigious <a href="https://www.ics.uci.edu/community/news/view_news.php?id=1108">Public Impact Fellowship </a> for 2016-2017 </li>
+  <!--                    <li>Our paper on Robust Registration of Histology Slices is accepted to 
+                          <a  href="http://www.iitg.ernet.in/icvgip2016">ICVGIP 2016 </a>.</li>  -->
+                          <li>[July, 2016] Our paper on Automatic Artifact Detection is accepted for <strong>Long Oral Presentation</strong> to <a href="https://sites.google.com/site/miccaimcv16/home">MICCAI MCV Workshop 2016.</a></li>
+                      </div>
+                    </ul>
+                  </p>
+          </td>
+      </tr>
+  </table>
+
+
+  <!-- Research -->
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td>
+              <heading>Research</heading>
+              <p> I enjoy solving problems at the intersection of computer vision, graphics and 3D deep learning. In the past, I have also worked on low-level vision, medical image processing and 3D visualization. </p>
+        </td>
+      </tr>
+  </table>
+
+
+  <!-- Dataset -->
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+          <td>
+          <heading2>Datasets</heading2>
+          </td>
+      </tr>
+  </table>
+
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+      <!-- =================Dataset========================== -->
+      <tr> 
+          <td width="25%"><img src="./all_chair.png" alt="coming soon" width="250" height="110" style="border-style: none"></td>
+          
+          <td width="75%" valign="top">
+          <p><a href=""><papertitle>High-Quality 3D Models</papertitle></a> <update>(Coming Soon)</update> 
+          <br>
+          </p>
+          <projectdesc>High quality mesh dataset comprising of 3D models which contain artistic embellishments and decorations.</projectdesc>
+          </td>
+      </tr>
+
+      <!-- =================Dataset========================== -->
+      <tr> 
+          <td width="25%"><img src="./mouseBrain/mouseBrain.png" alt="mouseBrain" width="250" height="160" style="border-style: none"></td>
+          
+          <td width="75%" valign="top">
+          <p><a href=""><papertitle>3D Annotated Mouse Brain Model</papertitle></a><br>
+          </p>
+          <projectdesc> A 3D annotated mouse brain model constructed from the 2D Allen Reference Atlas. Our 3D model has correct topology and geometry and can be virtually sliced in arbritary directions and intervals serving as a template for automatic registration.</projectdesc>
+          <p>
+          <a href ="./mouseBrain/index.html#mouseBrainModel">v1</a> - with 20 major anatomical regions <br>
+          <a href ="">v2</a> - with 166 major anatomical regions <update>(Coming Soon)</update> <br>
+          </p>
+
+          </td>
+      </tr>
+  </table>
+
+
+  <!-- Papers -->
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+          <td>
+          <heading2>3D Deep Learning</heading2>
+          </td>
+      </tr>
+  </table>
+
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+      <!--=================Paper==========================-->
+      <tr> 
+          <td width="25%"><img src="./3DV_2020.png" alt="3DV_2020" width="250" height="140" style="border-style: none"></td>
+          <td width="75%" valign="top">
+          <p><a href="https://arxiv.org/abs/2010.09774"><papertitle>GAMesh: Guided and Augmented Meshing for Deep Point Networks</papertitle></a><br> 
+
+          <strong>Nitin Agarwal</strong>, <a href="http://www.ics.uci.edu/~gopi/"> Gopi Meenakshisundaram</a><br>
+
+          <em>International Conference on 3D Vision (3DV), 2020</em><br>
+          <a href ="./GAMesh/index.html">project page</a> /
+          <a href="./GAMesh/3DV_poster.pdf">poster</a> /
+          <a href="./GAMesh/3DV_2020.bib">bibtex</a>
+          </p>
+          <projectdesc>We propose a meshing algorithm to generate a surface with correct topology for the output points of a point network. GAMesh can be used both in post-processing to mesh the output points or to train the point network to directly optimize the vertex positions of the final 3D mesh. </projectdesc>
+          </td>
+      </tr>
+
+
+      <!--=================Paper==========================-->
+      <tr> 
+          <td width="25%"><img src="./pg_2020.png" alt="PG_talk" width="250" height="160" style="border-style: none"></td>
+          <td width="75%" valign="top">
+          <p><a href="https://arxiv.org/abs/2010.10557"><papertitle>Image-Driven Furniture Style for Interactive 3D Scene Modeling</papertitle></a><br> 
+
+          <a href="http://web.cs.ucla.edu/~tweiss/">Tomer Weiss</a>, <a href="https://www.linkedin.com/in/ilkay-y%C4%B1ld%C4%B1z">Ilkay Yildiz</a>, <strong>Nitin Agarwal</strong>, <a href="https://ecansizoglu.wordpress.com/">Esra Ataer-Cansizoglu</a>, <a href="https://www.linkedin.com/in/jaewoochoi">Jae-Woo Choi</a><br>
+
+          <em>Pacific Graphics, 2020</em><br>
+          <a href ="https://arxiv.org/abs/2010.10557">paper</a> /
+          <!-- <a href="tbd">slides</a> / -->
+          <a href="./style_compatibility/pg_2020.bib">bibtex</a> /
+          <a href="https://www.youtube.com/watch?v=9uHsw1h2yDM">video</a>
+          </p>
+          <projectdesc> We infer the style of 3D furniture models by training a variation of siamese network on scene images. Our style estimation not only embodies geometry, but also other elements reflected in scene images inlcuding color, texture, material, illumination and the use of space.</projectdesc>
+          </td>
+      </tr>
+
+
+      <!--=================Paper==========================-->
+      <tr> 
+          <td width="25%"><img src="./3DL_talk.png" alt="3DL_talk" width="250" height="150" style="border-style: none"></td>
+          <td width="75%" valign="top">
+          <p><a href=""><papertitle>Tutorial on 3D Deep Learning</papertitle></a><br> 
+
+          <strong>Nitin Agarwal</strong><br>
+
+          <em>Course on Advanced Computer Graphics, Winter 2020</em><br>
+          <a href="https://drive.google.com/uc?id=19aOuyX7-nMSdF1fZ7E2QtNtXGV10vTaU&export=download">slides</a>
+          </p>
+          <projectdesc>I gave a 3hr talk on 3D deep learning in the graduate class (CS-211B) taught by Prof. <a href="http://www.ics.uci.edu/~gopi/">Gopi Meenaskshisundaram</a> at UCI, where I provided an overview of the area along with a lot of resources useful for anyone starting research in this direction. 
+          </projectdesc>
+          </td>
+      </tr>
+
+      <!--=================Paper==========================-->
+      <tr> 
+          <td width="25%"><img src="./bmvc_2019.png" alt="bmvc_2019" width="250" height="160" style="border-style: none"></td>
+          <td width="75%" valign="top">
+          <p><a href="https://arxiv.org/abs/1907.10250"><papertitle>Learning Embedding of 3D models with Quadric Loss</papertitle></a><br> 
+
+          <strong>Nitin Agarwal</strong>, <a href="https://sgvr.kaist.ac.kr/~sungeui/">Sung-Eui Yoon</a>,<a href="http://www.ics.uci.edu/~gopi/"> Gopi Meenakshisundaram</a><br>
+
+          <em>British Machine Vision Conference (BMVC), 2019</em> &nbsp;<update>(Oral Presentation)</update><br>
+          <a href ="./quadricLoss/index.html">project page</a> /
+          <a href="https://docs.google.com/presentation/d/1d-B_0gCZIDLSPjSp7lBy-duzVoPHK0dOsfJPxe49l10/edit?usp=sharing">slides</a> /
+          <a href="./quadricLoss/BMVC_poster_2019.pdf">poster</a> /
+          <a href="./quadricLoss/BMVC_2019.bib">bibtex</a>
+          </p>
+          <projectdesc>We propose a new point-to-surface based loss function named Quadric Loss, which penalizes displacements of points in the normal direction thereby preserving sharp features and edges in the output reconstruction. Its differentiable and can be easily incorporated into any point/mesh based network. </projectdesc>
+          </td>
+      </tr>
+  </table>
+
+
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tr>
+        <td>
+        <heading2>Multi-View Geometry & 3D Reconstruction</heading2>
+        </td>
+    </tr>
+  </table>
+
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+      <!--=================Paper==========================-->
+      <tr> 
+          <td width="25%"><img src="./wacv_2018.jpg" alt="wacv_2018" width="250" height="160" style="border-style: none"></td>
+          <td width="75%" valign="top">
+          <p><a href="./bugproject/wacv18.pdf"><papertitle>Towards Automated Transcription of Label Text from Pinned Insect Collections</papertitle></a><br> 
+
+          <strong>Nitin Agarwal</strong>, <a href="https://www.anl.gov/profile/nicola-j-ferrier">Nicola Ferrier</a>, <a href="https://www.anl.gov/profile/mark-hereld"> Mark Hereld</a><br>
+
+          <em>Winter Conference on Application of Computer Vision (WACV), 2018</em><br>
+          <a href ="./bugproject/index.html">project page</a> /
+          <a href="./bugproject/wacv_talk.pptx">slides</a> /
+          <a href="./bugproject/wacv_poster.pdf">poster</a> /
+          <a href="./bugproject/WACV_2018.bib">bibtex</a>
+          </p>
+          <projectdesc>We develop an image processing pipeline which demonstrates that, with some computation, it is feasible to produce label images that are OCR-ready from images of "intact” pinned insect specimens. </projectdesc>
+          </td>
+      </tr>
+
+      <!--=================Paper==========================-->
+      <tr> 
+          <td width="25%"><img src="./eScience_2017.jpg" alt="eScience" width="250" height="160" style="border-style: none"></td>
+          <td width="75%" valign="top">
+          <p><a href="./eScience_paper_2017.pdf"><papertitle>Designing a high-throughput pipeline for digitizing pinned insects</papertitle></a><br> 
+
+          <a href="https://www.anl.gov/profile/mark-hereld">Mark Hereld</a>, <a href="https://www.anl.gov/profile/nicola-j-ferrier">Nicola Ferrier</a>, <strong>Nitin Agarwal</strong>, <a href="https://www.fieldmuseum.org/about/staff/profile/461">Petra Sierwald</a><br>
+
+          <em>BigDig Workshop (eScience)</em>, 2017 &nbsp;<update>(Oral Presentation)</update><br>
+          <a href = "./bugproject/index.html">project page</a> /
+          <a href="./eScience_talk_2017.pdf">slides</a> /
+          <a href="./eScience_2017.bib">bibtex</a>
+          </p>
+          <projectdesc>We design a camera rig setup for multi-view reconstruction of small pinned insects (found in museum collections) with their labels using Lytro cameras.</projectdesc>
+          </td>
+      </tr>
+  </table>
+
+
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tr>
+        <td>
+        <heading2>Low Level Vision, Computer Graphics & 3D Visualization</heading2>
+        </td>
+    </tr>
+  </table>
+
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <!--=================Paper==========================-->
+      <tr> 
+          <td width="25%"><img src="./mouseBrain.jpg" alt="mouseBrain" width="250" height="160" style="border-style: none"></td>
+          <td width="75%" valign="top">
+          <p><a href="https://arxiv.org/abs/1712.09684"><papertitle>Geometry Processing of Conventionally Produced Mouse Brain Slice Images</papertitle></a><br> 
+
+          <strong>Nitin Agarwal</strong>, <a href="http://xulab.anat.uci.edu/">Xiangmin Xu</a>, <a href="http://www.ics.uci.edu/~gopi/"> Gopi Meenakshisundaram</a><br>
+
+          <em>Journal of Neuroscience Methods, 2018</em><br>
+          <a href ="./mouseBrain/index.html">project page</a> /
+          <a href="./mouseBrain/mouseBrain_2017.bib">bibtex</a>
+          </p>
+          <projectdesc>We develop techniques and algorithms for automatic registration and 3D reconstruction of conventionally produced mouse brain slices in a standardized atlas space.</projectdesc>
+          </td>
+      </tr>
+
+
+      <!--=================Paper==========================-->
+      <tr> 
+          <td width="25%"><img src="./miccai_2014.jpg" alt="miccai" width="250" height="160" style="border-style: none"></td>
+          <td width="75%" valign="top">
+          <p><a href="./MICCAI_paper_2016.pdf"><papertitle>Automatic Detection of Histological Artifacts in Mouse Brain Slice Images</papertitle></a><br> 
+         <strong>Nitin Agarwal</strong>, <a href="http://xulab.anat.uci.edu/">Xiangmin Xu</a>, <a href="http://www.ics.uci.edu/~gopi/"> Gopi Meenakshisundaram</a><br>
+          
+          <em>Workshop on Medical Computer Vision: Algorithms for Big Data (MICCAI)</em>, 2016 &nbsp;<update>(Oral Presentation)</update><br>
+
+          <a href ="./mouseBrain/index.html">project page</a> /
+          <a href="./miccai_talk.pps">slides</a> /
+          <a href="./MICCAI_poster_2016.pdf">poster</a> /
+          <a href="./MICCAI_2016.bib">bibtex</a>
+          </p>
+          <projectdesc>Histological artifacts are extremely common in conventional histological procedures. In this work we present a new method to automatically detect and ignore such artifacts for achieveing accurate registration.</projectdesc>
+          </td>
+      </tr>
+
+
+      <!--=================Paper==========================-->
+      <tr> 
+          <td width="25%"><img src="./icvgip_2016.jpg" alt="icvgip" width="250" height="160" style="border-style: none"></td>
+          <td width="75%" valign="top">
+          <p><a href="./ICVGIP_paper_2016.pdf"><papertitle>Robust Registration of Mouse Brain Slice with Severe Histological
+          Artifacts</papertitle></a><br> 
+
+          <strong>Nitin Agarwal</strong>, <a href="http://xulab.anat.uci.edu/">Xiangmin Xu</a>, <a href="http://www.ics.uci.edu/~gopi/"> Gopi Meenakshisundaram</a><br>
+
+          <em>Indian Conference on Computer Vision, Graphics & Image Processing (ICVGIP)</em>, 2016 &nbsp; <br> 
+          <a href =./mouseBrain/index.html>project page</a> /
+          <a href="./ICVGIP_poster_2016.pdf">poster</a> /
+          <a href="./ICVGIP_2016.bib">bibtex</a>
+          </p>
+          <projectdesc>We propose a method for non-linear registration of mouse brain histology slices (with various histological artifacts) to a standardized atlas space.</projectdesc>
+          </td>
+      </tr>
+  </table>
+
+
+
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+          <td>
+          <!-- <heading2> Medical Image Processing (Before PhD)</heading2>  -->
+          <span id="customRef"> 
+              <a href="javascript:toggle_vis('old_projects')"> 
+                <heading2> Projects before PhD (click to expand) </heading2>
+              </a>
+          </span>
+          </td>
+      </tr>
+  </table>
+
+  <div id="old_projects" style="display:none"> 
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <!--=================Paper==========================-->
+        <tr onmouseout="jump_stop()" onmouseover="jump_start()" >
+            <td width="25%">
+                <div class="one">
+                    <div class="two" id = 'jump_image'><img src='./EMBC_2014.gif' width="250" height="160"></div>
+                    <img src='./EMBC_2014.png' width="250" height="160">
+                </div>                
+                
+                <script type="text/javascript">
+                    function jump_start() {
+                      document.getElementById('jump_image').style.opacity = "1";
+                    }
+                    function jump_stop() {
+                      document.getElementById('jump_image').style.opacity = "0";
+                    }
+                    jump_stop()
+                </script>
+            </td>
+            <td valign="top" width="75%">
+            <p><a href="./EMBC_paper_2014.pdf"><papertitle>DNA ploidy measure of Feulgen-stained cancer cells using 3D image cytometry</papertitle></a><br>
+
+            <strong>Nitin Agarwal</strong>, <a href="http://www.via.cornell.edu/people/xie.html">Yiting Xie</a>, Florence Patten, <a href="http://www.via.cornell.edu/people/reeves.html">Anthony P. Reeves</a>, <a href="http://www.me.washington.edu/research/faculty/eseibel/index.html">Eric Seibel</a> <br>
+
+            <em>IEEE Engineering in Medicine and Biology Society (EMBS)</em>, 2014 &nbsp; <update>(Oral Presentation)</update><br>
+            
+            <a href = "http://depts.washington.edu/hplab/research/3d-optical-projection-tomographic-microscopy/">project page</a> /
+            <a href="./EMBC_talk_2014.pps">slides</a> / 
+            <a href="./EMBC_2014.bib">bibtex</a>
+            </p>
+            <projectdesc> A method to accurately measure the DNA content of single cells in 3D and show that it can be an alternative method for assessing tumorgenesis in diagnostic cells.</projectdesc>
+            </td>
+        </tr>
+
+
+        <!--=================Paper==========================-->
+        <tr onmouseout="cell_stop()" onmouseover="cell_start()" >
+            <td width="25%">
+                <div class="one">
+                    <div class="two" id = 'cell_image'><img src='./JMI_2014.gif' width="250" height="160"></div>
+                    <img src='./JMI_2014.png' width="250" height="160">
+                </div>                
+                
+                <script type="text/javascript">
+                    function cell_start() {
+                      document.getElementById('cell_image').style.opacity = "1";
+                    }
+                    function cell_stop() {
+                      document.getElementById('cell_image').style.opacity = "0";
+                    }
+                    cell_stop()
+                </script>
+            </td>
+            <td valign="top" width="75%">
+            <p><a href="./JMI_paper_2014.pdf"><papertitle>3D DNA image cytomtery by optical projection tomographic microscope for early cancer diagnosis</papertitle></a><br>
+
+            <strong>Nitin Agarwal</strong>, <a href="https://www.linkedin.com/in/alberto-biancardi-46198b1b/?originalSubdomain=uk">Alberto Biancardi</a>, Florence Patten, <a href="http://www.via.cornell.edu/people/reeves.html">Anthony P. Reeves</a>, <a href="http://www.me.washington.edu/research/faculty/eseibel/index.html">Eric Seibel</a> <br>
+
+            <em>Journal of Medical Imaging (JMI)</em>, 2014 &nbsp; <br>
+            
+            <a href = "http://depts.washington.edu/hplab/research/3d-optical-projection-tomographic-microscopy/">project page</a> /
+            <a href="./JMI_2014.bib">bibtex</a>
+            </p>
+            <projectdesc>We extend the current cytopathological techniques from 2D to 3D for early cancer detection. We do this by accurately imaging individual cells along with novel 3D nuclear segmentation algorithms.</projectdesc>
+            </td>
+        </tr>
+
+        <!--=================Paper==========================-->
+        <tr> 
+            <td width="25%"><img src="./SPIE_2013.jpg" alt="spie" width="250" height="160" style="border-style: none"></td>
+            <td valign="top" width="75%">
+            <p><a href="./SPIE_paper_2013.pdf"><papertitle>Quantification of relative chromatin content in flow cytometry standards using 3D OPTM imaging technique</papertitle></a><br>
+
+            <strong>Nitin Agarwal</strong>, <a href="https://www.linkedin.com/in/alberto-biancardi-46198b1b/?originalSubdomain=uk">Alberto Biancardi</a>, Florence Patten, <a href="http://www.via.cornell.edu/people/reeves.html">Anthony P. Reeves</a>, <a href="http://www.me.washington.edu/research/faculty/eseibel/index.html">Eric Seibel</a> <br>
+
+            <em>SPIE Medical Imaging (SPIE)</em>, 2013 &nbsp; <br>
+            
+            <a href = "http://depts.washington.edu/hplab/research/3d-optical-projection-tomographic-microscopy/">project page</a> /
+            <a href="./SPIE_poster_2013.pdf">poster</a> /
+            <a href="./SPIE_2013.bib">bibtex</a> 
+            </p>
+            <projectdesc>A method to accurately measure the DNA content in small Flow Cytometry standards (chicken and trout nuclei).</projectdesc>
+            </td>
+        </tr>
+
+    </table>
+  </div>
+
+
+  <!-- Academic Services -->
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+          <td>
+          <heading>Academic Services</heading>
+          </td>
+      </tr>
+  </table>
+
+
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr> 
+          <td width="25%"><img src="./books.png" alt="review" width="180" height="160" style="border-style: none"></td>
+          <td valign="top" width="75%">
+          <p><strong><i>Conferences & Journals Reviewed </i></strong></p>
+          <!-- <br> -->
+          <p> <a href="">Vision & Graphics: </a> Graphical Models (2020), Pacific Graphics (2019), TVCG, I3D (2015), Visual Computer.</p>
+          <p> <a href="">Medical Image Processing: </a> PLOS ONE, Bioinformatics, Neuroscience Methods, Methods in Ecology & Evolution.</p>
+          </td>
+      </tr>
+  </table>
+
+
+  <!-- Personal -->
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+          <td>
+          <heading>Personal</heading>
+          </td>
+      </tr>
+
+      <!-- snippet borrowed from Fredo Durand -->
+      <SCRIPT LANGUAGE="JavaScript">
+          var theImages = new Array() 
+          // do not change this
+          // To add more image files, continue with the
+          // pattern below, adding to the array.
+
+          theImages[0] = './photography/1.jpg'
+          theImages[1] = './photography/2.jpg'
+          theImages[2] = './photography/3.jpg'
+          theImages[3] = './photography/4.jpg'
+          theImages[4] = './photography/5.jpg'
+          theImages[5] = './photography/6.jpg'
+          theImages[6] = './photography/7.jpg'
+          theImages[7] = './photography/8.jpg'
+          theImages[8] = './photography/9.jpg'
+          theImages[9] = './photography/10.jpg'
+          theImages[10] = './photography/11.jpg'
+          theImages[11] = './photography/12.jpg'
+          theImages[12] = './photography/13.jpg'
+
+          var j = 0
+          var p = theImages.length;
+          var preBuffer = new Array()
+          for (i = 0; i < p; i++){
+             preBuffer[i] = new Image()
+             preBuffer[i].src = theImages[i]
+          }
+          var whichImage = Math.floor(Math.random()*(p));
+          function showImage(){
+          document.write('<img src="'+theImages[whichImage]+'" alt="photo" width="250" height="160">');
+          }
+          
+      </SCRIPT>
+      
+      <tr>
+          <td width="25%">
+               <SCRIPT LANGUAGE="JavaScript">
+                  showImage();
+              </SCRIPT>
+              <!-- <img src="./photography/WallaceFalls.jpg" alt="photo" width="250" height="160"> -->
+          </td>
+          <td width="75%" valign="top">
+
+      <br>
+      <br>
+      <br>
+      <p>In my spare time I love to do photography. Do check out my <a href="https://agarwaln.smugmug.com/"><strong>images</strong>.</a></p>
+              </td>
+          </tr>
+  </table>
+
+
+  <!-- Footer -->
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+          <td>
+          <br>
+      <p align="right"><font size="2">
+      <a href="http://www.hitwebcounter.com" target="_blank">
+          <img src="http://hitwebcounter.com/counter/counter.php?page=6783599&style=0008&nbdigits=5&type=page&initCount=0" border="0" >
+      </a>
+        <a href="http://www.cs.berkeley.edu/~barron/">Thanks Jon!</a></font>
+      </p>
+          </td>
+      </tr>
+  </table>
+
+
+  <!-- Tracking -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48310551-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</html>

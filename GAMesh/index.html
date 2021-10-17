@@ -1,0 +1,331 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+	body {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-weight:300;
+		font-size:18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1000px;
+	}	
+	h1 {
+		font-weight:300;
+	}
+	
+	.disclaimerbox {
+		background-color: #eee;		
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+		padding: 20px;
+	}
+
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.rounded {
+		border: 0px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	a:link,a:visited
+	{
+		color: #1772d0;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #f09228;
+	}
+	
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+	
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		        5px 5px 0 0px #fff, /* The second layer */
+		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		        10px 10px 0 0px #fff, /* The third layer */
+		        10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+		        15px 15px 0 0px #fff, /* The fourth layer */
+		        15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+		        20px 20px 0 0px #fff, /* The fifth layer */
+		        20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+		        25px 25px 0 0px #fff, /* The fifth layer */
+		        25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		        5px 5px 0 0px #fff, /* The second layer */
+		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		        10px 10px 0 0px #fff, /* The third layer */
+		        10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
+	
+	.vert-cent {
+		position: relative;
+	    top: 50%;
+	    transform: translateY(-50%);
+	}
+	
+	hr
+	{
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+</style>
+
+<html>
+  <head>
+		<title>GAMesh: Guided and Augmented Meshing for Deep Point Networks</title>
+		<meta property="og:image" content="./teaser.png"/>
+		<meta property="og:title" content="GAMesh: Guided and Augmented Meshing for Deep Point Networks" />
+  </head>
+
+  <body>
+    <br>
+    	<center>
+    		<span style="font-size:42px">GAMesh: Guided and Augmented Meshing </span><br>
+          	<span style="font-size:42px">for Deep Point Networks</span><br>
+
+	  		  <table align=center width=800px>
+	  		  <!-- <table align=center width=540px> -->
+	  			  <tr>
+	  	              <td align=center width=200px>
+	  					<center>
+	  						<span style="font-size:18px"><a href="http://www.ics.uci.edu/~agarwal/">Nitin Agarwal</a></span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=200px>
+	  					<center>
+	  						<span style="font-size:18px"><a href="https://www.ics.uci.edu/~gopi/">Gopi Meenakshisundaram</a></span>
+		  		  		</center>
+		  		  	  </td>
+	  			  </tr>
+			  </table>
+
+
+	  		  <table align=center width=1000px>
+	  			  <tr>
+	  	              <td align=center width=100px>
+	  					<center>
+				          	<span style="font-size:18px"></span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=200px>
+	  					<center>
+				          	<span style="font-size:18px">Interactive Graphics & Visualization Lab</span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=100px>
+	  					<center>
+				          	<span style="font-size:18px"></span>
+		  		  		</center>
+		  		  	  </td>
+		  		  </tr>
+			  </table>
+
+			  <!-- <span style="font-size:20px">University of California, Irvine</span> -->
+	  		  <!-- <table align=center width=1000px>
+	  			  <tr>
+	  	              <td align=center width=275px>
+	  					<center>
+				          	<span style="font-size:18px"></span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=225px>
+	  					<center>
+	  						<span style="font-size:22px">Code <a href=''> [GitHub]</a></span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=225px>
+	  					<center>
+	  						<span style="font-size:22px">Conference<a href=""> [Paper]</a></span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=275px>
+	  					<center>
+				          	<span style="font-size:18px"></span>
+		  		  		</center>
+		  		  	  </td>
+			  </table> -->
+
+          </center>
+
+          <br>
+          <table align=center width=1000px>
+  			  <tr>
+  	              <td width=1000px>
+  					<center>
+  	                	<img class="rounded" src = "./teaser.png" height="350px"></img>
+  	                	<br>
+					</center>
+  	              </td>
+              </tr>
+          </table>
+
+  		  <br>
+		  <hr>
+
+  		  <table align=center width=1000px>
+	  		  <center><h1>Abstract</h1></center>
+					We present a new meshing algorithm called guided and augmented meshing, GAMesh, which uses a mesh prior to
+					generate a surface for the output points of a point network. By projecting the output points onto this prior and simplifying the resulting mesh, GAMesh ensures a surface with the same topology as the mesh prior but whose geometric fidelity is controlled by the point network. This makes GAMesh independent of both the density and distribution of the output points, a common artifact in traditional surface reconstruction algorithms. We show that such a separation of geometry from topology can have several advantages especially in single-view shape prediction, fair evaluation of point networks and reconstructing surfaces for networks which output sparse point clouds. We further show that by training point networks with GAMesh, we can directly optimize the vertex positions to generate adaptive meshes with arbitrary topologies. 
+		  <br>		
+  		  <br>
+		  <hr>
+
+	  	<center><h1>Summary Video</h1></center>
+
+  		<table align=center width=1000px>
+  		 	<center>
+  	              <iframe width="900" height="600" src="https://www.youtube.com/embed/QA0BgA2hw6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	        </center>			
+ 		</table>
+
+	  	<br>		
+		<br>
+	  	<hr>
+
+		<center><h1>Code</h1></center>
+
+  		 <table align=center width=1000px>
+  			  	<center><a href="tbd"><img class="round" style="width:800px" src="./insight.png"/></a></center>
+				  </td>
+ 		</table>
+
+		<table align=center width=1000px>
+ 			<tr>
+				<td align=center width=1000px><span style="font-size:22px"><a href="tbd">[Code]</a></td>
+			  </tr>
+		</table>
+
+	    <br>
+		<br>
+	  	<hr>
+
+ 		  <table align=center width=1000px>
+	 		<center><h1>Paper</h1></center>
+  			  <tr>
+				  <td align="right"><a href="arxiv paper"><img class="layered-paper-big" style="height:175px" src="./paper.png"/></a></td>
+				  <td><span style="font-size:14pt">N. Agarwal, M. Gopi<br>
+				  <b>GAMesh: Guided and Augmented Meshing for Deep Point Networks</b>
+				  <br>
+				  3DV, 2020<a href="https://arxiv.org/abs/2010.09774"> [arXiv Preprint]</a> 
+				  <br>
+				  <a href="./suppl.pdf">Supplementary Document</a> 
+				  <br>
+				  <a href="./3DV_2020.bib">[Bibtex]</a>
+				<!--   <span style="font-size:4pt"><a href=""><br></a></span> -->
+				  </td>
+              </tr>
+  		  </table>
+
+		  <br>
+  		  <br>
+		  <hr>
+
+		  <center><h1>Application 1: Single-View 3D Reconstruction</h1></center>
+    		<table align=center width=1000px>
+	  		    <tr>
+	              	<p style="text-align:center;">GAMesh combines geometry from point networks and topology from implicit networks to reconstruct high fidelity meshes with correct topology for single-view reconstruction.</p>
+	              	<a href=""><img class="rounded" src = "./svr.png" width = "1000px"></a><br>
+				</tr>
+			</table>
+
+			<center><h1>Application 2: Training with GAMesh</h1> </center>
+	    		<table align=center width=1000px>
+		  		    <tr>
+  		              	<p style="text-align:center;">Point reconstruction networks can be trained with GAMesh, to generate adaptive meshes with arbritary topology.</p>
+  		              	<a href=""><img class="rounded" src = "./training_gamesh.png" width = "1000px"></a><br>
+					</tr>
+				</table>
+<!-- we can optimize the vertex positions  -->
+
+			<center><h1>Application 3: Fair Evaluation of Point Networks</h1> </center>
+	    		<table align=center width=1000px>
+		  		    <tr>
+		              	<p style="text-align:center;">We should evaluate both the output points and the output surfaces (from GAMesh) for evaluating point networks.</p>
+		              	<a href=""><img class="rounded" src = "./pointNet_evaluation.png" width = "1000px"></a><br>
+					</tr>
+				</table>
+
+			<center><h1>Application 4: Mesh Sparse Point Clouds</h1> </center>
+	    		<table align=center width=1000px>
+		  		    <tr>
+  		              	<p style="text-align:center;">GAMesh can mesh points from various point networks and loss functions.</p>
+  		              	<a href=""><img class="rounded" src = "./sparse_pointclouds.png" width = "1000px"></a><br>
+					</tr>
+				</table>
+
+		<hr> 
+
+
+		<table align=center width=1000px>
+			  <tr>
+	              <td width=400px>
+					<left>
+  		  		<center><h1>Related Work</h1></center>
+				 Nitin Agarwal, Sung-eui Yoon, M Gopi <b>Learning Embedding of 3D models with Quadric Loss.</b> In BMVC, 2019. <a href="https://arxiv.org/abs/1907.10250">[PDF]</a></br>
+				 Nicholas Sharp, Maks Ovsjanikov <b>PointTriNet: Learned Triangulation of 3D Point Sets.</b> In ECCV, 2020. <a href="https://arxiv.org/abs/2005.02138">[PDF]</a></br>
+				 Rana Hanocka, Gal Metzer, Raja Giryes, Daniel Cohen-Or <b>Point2Mesh: A Self-Prior for Deformable Meshes.</b> In SIGGRAPH, 2020. <a href="https://arxiv.org/abs/2005.11084">[PDF]</a></br>
+				<br>
+				</left>
+			  </td>
+		 </tr>
+		</table>
+
+		  <hr>
+
+		<br>
+		<br>
+
+		<table align=right width=1000px>
+  			<tr>
+  	       		<td width=400px>
+					<small>
+						<p align=right>Project template was borrowed from <a href="https://richzhang.github.io/">Richard Zhang</a> </p>
+					</small>
+				</td>
+			 </tr>
+		</table>
+
+<script>
+  // google analytics
+
+</script>
+              
+</body>
+</html>
+ 
